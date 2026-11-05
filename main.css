@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    color: #245c3b;
+    margin-bottom: 25px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #27834a;
+    color: white;
+    padding: 12px 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.botao:hover {
+    background-color: #1c6538;
+}
+
+.tabela-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #245c3b;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f7f2;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #27834a;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.botoes input {
+    width: auto;
+    padding: 11px 22px;
+    cursor: pointer;
+    border: none;
+    background-color: #27834a;
+    color: white;
+}
+
+.botoes input[type="reset"] {
+    background-color: #777;
+}
+
+.botoes input:hover {
+    opacity: 0.85;
+}
+
+a {
+    color: #245c3b;
+}
+
+
+td form {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+td form button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+td form button:hover {
+    background-color: #b02a37;
+}
+
+td a {
+    display: inline-block;
+    background-color: #27834a;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+td a:hover {
+    background-color: #1c6538;
+}
+
+
+.tabela-container {
+    overflow-x: auto;
+}
+
+table {
+    min-width: 850px;
+    table-layout: auto;
+}
+
+th, td {
+    white-space: nowrap;
+}
+
+td form {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+td a, td form button {
+    white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 18px;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
