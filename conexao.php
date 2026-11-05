@@ -4,12 +4,14 @@
     $servidor = "localhost";
     $usuario = "root";
     $senha = "";
-    $bd = "bd_estoque";
+    $bd = "empresa";
     //charmar o comando para CONECTAR
-    $resultado = mysqli_connect($servidor, $usuario, $senha, $bd);
-    if ($result) {
-        echo "Conexão realizada com sucesso!";
-    } else {
-        echo mysqli_error($result);
-    }   
+    $conexao = mysqli_connect($servidor, $usuario, $senha, $bd);
+    if (!$conexao) {
+        die("Falha na conexão: " . mysqli_connect_error());
+    }
+    else {
+        echo mysqli_error($conexao);
+    }
+
 ?>
