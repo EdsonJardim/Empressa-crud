@@ -8,17 +8,17 @@ $salario = $_POST['salario'];
 $admissao = $_POST['data_admissao'];
 
 $sql = "INSERT INTO funcionario (nome, email, cargo, salario, data_admissao)
-        VALUES (?, ?, ?, ?, ?)"; // Consulta SQL para inserir os dados do funcionário
+        VALUES (?, ?, ?, ?, ?)";
 
-$stmt = mysqli_prepare($conexao, $sql); // Prepara a consulta SQL para inserção de dados
+$stmt = mysqli_prepare($conexao, $sql);
 
-mysqli_stmt_bind_param($stmt, "sssds", $nome, $email, $cargo, $salario, $admissao); // Vincula os parâmetros à consulta preparada
+mysqli_stmt_bind_param($stmt, "sssds", $nome, $email, $cargo, $salario, $admissao);
 
-$result = mysqli_stmt_execute($stmt); // Executa a consulta preparada e armazena o resultado em $result
+$result = mysqli_stmt_execute($stmt);
 
 if ($result) {
-    header("Location: listar.php"); // Redireciona para a página de listagem de funcionários após a inserção bem-sucedida
-    exit; // Encerra o script após o redirecionamento
+    header("Location: listar.php");
+    exit;
 } else {
     echo "Erro ao cadastrar funcionário: " . mysqli_error($conexao); // Exibe uma mensagem de erro caso a inserção falhe
 }

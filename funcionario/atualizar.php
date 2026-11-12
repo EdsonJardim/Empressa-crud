@@ -1,6 +1,6 @@
 <?php
 
-require_once('../conexao.php');
+require_once('../conexao.php'); // Inclua o arquivo de conexão com o banco de dados
 
 $id = (int) $_POST['id'];
 $nome = mysqli_real_escape_string($conexao, $_POST['nome']);
@@ -24,6 +24,6 @@ if (mysqli_query($conexao, $sql)) {
     echo "Erro ao atualizar funcionário: " . mysqli_error($conexao);
 }
 
-mysqli_close($conexao);
+mysqli_close($conexao); // Fecha a conexão com o banco de dados
 
 ?>

@@ -23,11 +23,11 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#">Adicionar</a>
+          <a class="dropdown-item" href="#">Atualizar</a>
           <a class="dropdown-item" href="#">Editar</a>
           <a class="dropdown-item" href="#">Excluir</a>
-          <a class="dropdown-item" href="#">Visualizar</a>
+          <a class="dropdown-item" href="#">Inserir</a>
           <a class="dropdown-item" href="#">Listar</a>
-          <a class="dropdown-item" href="#">Atualizar</a>
           <a class="dropdown-item" href="#">Remover</a>
         </div>
       </li>
